@@ -21,6 +21,7 @@ $(document).ready(function() {
             url: 'static/img/img.jpg', 
             type: 'GET',
             dataType: 'text',
+            async:true,
             success: function(data) {
                 clearInterval(intervalId);
                 $('#imgasc').html('<img src="static/img/img.jpg" alt="Imagen" class="card-img-top">');
